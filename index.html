@@ -7,162 +7,114 @@
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-
-    <!-- Header -->
-    <header>
+        <header>
         <h1 class="titulo-tienda">Tienda <span class="color-muebles">Muebles</span></h1>
     </header>
-
-    <!-- Navegación o menú -->
-    <nav>
-        <ul class="navbar">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Tienda</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Galería</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <!-- Hero -->
-    <div class="hero"></div>
-
-    <!-- Productos -->
-    <section class="productos">
+        <div class="hero"></div>
+  
+    <section class="productos container">
         <h2>Productos</h2>
-
-        <!-- Primera fila -->
-        <div class="fila productos-fila">
-            <div class="columna producto">
-        <img src="producto1.jpg" alt="" srcset="">
-            </div>
-            <div class="columna azul producto-info">
-                            <h2>Recamara</h2>
-                <p>recamara con cama y closet </p>
+<section class="productos container">
+    <h2>Productos</h2>
+    <div class="row productos-fila">
+               <div class="col-md-6 col-lg-4">
+            <img src="producto1.jpg" alt="Producto 1">
+            <div class="azul producto-info">
+                <h2>Recamara</h2>
+                <p>Recamara con cama y closet</p>
                 <p>Precio: $12000</p>
-                <button>Agregar al carrito</button>
+                <button class="btn btn-primary">Agregar al carrito</button>
             </div>
         </div>
-        <!-- Segunda fila -->
-        <div class="fila productos-fila">
-            <div class="columna producto">
-            <img src="producto2.jpg" alt="" srcset="">
-            </div>
-            <div class="columna azul producto-info">
-                <h2>sala</h2>
-                <p>sala con sillon y un mueble </p>
+        <div class="col-md-6 col-lg-4">
+            <img src="producto2.jpg" alt="Producto 2">
+            <div class="azul producto-info">
+                <h2>Sala</h2>
+                <p>Sala con sillón y un mueble</p>
                 <p>Precio: $15000</p>
-                <button>Agregar al carrito</button>
-                         </div>
-        </div>
-        <div class="fila productos-fila">
-            <div class="columna producto">
-            <img src="producto3.jpg" alt="" srcset="">
+                <button class="btn btn-primary">Agregar al carrito</button>
             </div>
-            <div class="columna azul producto-info">
-                <h2>cama</h2>
-                <p>cama con colchon  </p>
+        </div>
+                <div class="col-md-6 col-lg-4">
+            <img src="producto3.jpg" alt="Producto 3">
+            <div class="azul producto-info">
+                <h2>Cama</h2>
+                <p>Cama con colchón</p>
                 <p>Precio: $20000</p>
-                <button>Agregar al carrito</button>
-        <!-- Tercera fila -->
-        <div class="fila productos-fila">
-            <div class="columna producto">
-            <img src="producto4.jpg" alt="">
-            </div>
-            <div class="columna azul producto-info">
-                <h2>sillon</h2>
-                <p>sillon con cojines</p>
-                <p>precio: $21000</p>
-                <button>Agregar al carrito</button>
-                <!-- Repite el mismo formato para el producto 5 y 6 -->
-            </div>
-            <div class="fila productos-fila">
-                <div class="columna producto">
-                    <img src="producto5.jpg" alt="">
-                    <div class="columna azul producto-info">
-                        <h2>sala de estar </h2>
-                        <p>mesa larga con silla</p>
-                        <p>precio: $24000</p>
-                        <button>Agregar al carrito</button>
-                    </div>
-                    <div class="fila productos-fila">
-                        <div class="columna producto">
-                            <img src="producto6.jpg" alt="">
-                            <div class="columna azul producto-info">
-                                <h2>sillon para 2 personas </h2>
-                                <p>sillon simple de color blanco para 2 personas </p>
-                                <p>precio: $30000</p>
-                                <button>Agregar al carrito</button>
-
-                </section>
-
-    <!-- Categorías -->
-    <section class="categorias">
-        <h2>Categorías</h2>
-
-        <!-- Fila de categorías -->
-        <div class="fila">
-            <div class="columna categoria">
-                <img src="categoria1.jpg" alt="Categoría 1">
-                <a href="#">Categoría 1</a>
-            </div>
-            <div class="columna categoria">
-                <img src="categoria2.jpg" alt="Categoría 2">
-                <a href="#">Categoría 2</a>
-            </div>
-            <div class="columna categoria">
-                <img src="categoria3.jpg" alt="Categoría 3">
-                <a href="#">Categoría 3</a>
+                <button class="btn btn-primary">Agregar al carrito</button>
             </div>
         </div>
-        div class="fila productos-fila">
-            <div class="columna producto">
-            <img src="producto4.jpg" alt="" srcset="">
-
+        <div class="col-md-6 col-lg-4">
+            <img src="producto4.jpg" alt="Producto 4">
+            <div class="azul producto-info">
+                <h2>Sillón</h2>
+                <p>Sillón simple</p>
+                <p>Precio: $30000</p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <img src="producto5.jpg" alt="Producto 5">
+            <div class="azul producto-info">
+                <h2>Sala de estar</h2>
+                <p>Mesa larga con silla</p>
+                <p>Precio: $24000</p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+            </div>
+        </div>
+            <div class="col-md-6 col-lg-4">
+            <img src="producto6.jpg" alt="Producto 6">
+            <div class="azul producto-info">
+                <h2>Sillón para 2 personas</h2>
+                <p>Sillón simple de color blanco para 2 personas</p>
+                <p>Precio: $30000</p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+                
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="fila">
-            <div class="columna">
-                <h3>Cocina</h3>
-                <nav>
-                    <ul>
-                        <li><a href="#" style="color: black; text-decoration: none;">Cocina</a></li>
-                        <li><a href="#" style="color: black; text-decoration: none;">Oficina</a></li>
-                        <li><a href="#" style="color: black; text-decoration: none;">Jardín</a></li>
-                        <li><a href="#" style="color: black; text-decoration: none;">Cochera</a></li>
-                        <li><a href="#" style="color: black; text-decoration: none;">Dormitorios</a></li>
-                    </ul>
-                </nav>
+       <section class="categorias container">
+        <h2>Categorías</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="categoria1.jpg" alt="Categoría 1">
+                <a href="#" class="text-decoration-none">Categoría 1</a>
             </div>
-            <div class="columna">
-                <h3>Sobre nosotros</h3>
-                <nav>
-                    <ul>
-                        <li><a href="#">Nuestra historia</a></li>
-                        <li><a href="#">Misión, visión y valores</a></li>
-                        <li><a href="#">Carrera</a></li>
-                        <li><a href="#">Políticas de privacidad</a></li>
-                        <li><a href="#">Términos del servicio</a></li>
-                    </ul>
-                </nav>
+            <div class="col-md-4">
+                <img src="categoria2.jpg" alt="Categoría 2">
+                <a href="#" class="text-decoration-none">Categoría 2</a>
             </div>
-            <div class="columna">
-                <h3>Soporte</h3>
-                <nav>
-                    <ul>
-                        <li><a href="#">Preguntas frecuentes</a></li>
-                        <li><a href="#">Ayuda en línea</a></li>
-                        <li><a href="#">Confianza y seguridad</a></li>
-                    </ul>
-                </nav>
+            <div class="col-md-4">
+                <img src="categoria3.jpg" alt="Categoría 3">
+                <a href="#" class="text-decoration-none">Categoría 3</a>
             </div>
         </div>
-    </footer>
-
+    </section>
+      <footer class="container-xl">
+        </footer>
+        <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>

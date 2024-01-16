@@ -1,12 +1,18 @@
+.bs-blue {
+    color: #037BC0 !important;
+    background-color: #037BC0 !important;
+}
+.bs-green {
+    color: #8cbc00 !important;
+    background-color: #8cbc00 !important;
+}
 .titulo-tienda {
     font-size: 5rem;
     color: #037BC0;
 }
-
 html {
     font-size: 62.5%;
 }
-
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
@@ -34,24 +40,20 @@ h2, h3 {
     background-color: #037BC0;
     padding: 1rem 0;
 }
-
 .navbar {
     display: flex;
     justify-content: space-around;
-    background-color: #037BC0;
+    background-color: #0e96e4;
     padding: 1rem 0;
 }
-
 .navbar a {
     color: #090909;
     text-decoration: none;
 }
-
 .productos {
     display: flex;
     flex-wrap: wrap;
 }
-
 .producto, .categoria {
     flex: 1;
     margin: 1rem;
@@ -60,15 +62,9 @@ h2, h3 {
 .productos-fila {
     width: 100%;
 }
-
 .footer {
     display: flex;
     flex-direction: column;
     background-color: #037BC0;
-    color: rgb(10, 10, 10);
-}
-
-.azul {
-    background-color: #037BC0;
-    color: rgb(10, 10, 10);
+    color: #090909;
 }
