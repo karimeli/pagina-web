@@ -1,76 +1,103 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,200;0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap');
 
-.titulo-tienda span {
-    color: #037BC0;
+/* Color Definitions */
+:root {
+  --bs-blue: #037BC0;
+  --bs-green: #8cbc00;
 }
 
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
-
 
 body {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.6rem;
-    line-height: 2;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 
-
 h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 h1 {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
 h2, h3 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 
 .hero {
-    background-image: url('principal.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 25rem; 
+  background-image: url('principal.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 25rem;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    height: 55rem;
+  }
 }
 
 
 .navbar {
-    display: flex;
-    justify-content: space-around; 
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.navbar {
+  background-color: var(--bs-green);
+}
+
+.navbar a {
+  color: var(--bs-blue);
 }
 
 
 .container1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.product {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.product button {
+  background-color: var(--bs-green);
+  color: #fff;
+}
+
+
+.grid2 a {
+  text-decoration: none; 
 }
 
 
 .footer {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    background-color: #343a40;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-.footer h3 {
-    margin-bottom: 10px;
+.footer {
+  width: 100%;
 }
 
-.footer li {
-    list-style: none;
-    margin-bottom: 5px;
-}
 
-.footer a {
-    color: #f6f4f4;
-    text-decoration: none;
-}
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
